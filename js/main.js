@@ -23,4 +23,13 @@ window.onload = function () {
       añadirClases("equisReset", "equisResetMiddle", "equisReset");
     }
   };
+
+  //click en cualquier elemento de la galeria y nos lleva a su descripcion
+  var cards = document.querySelectorAll(".container > figure");
+
+  for (const card of cards) {
+    card.onclick = function () {
+      location.href = "registro.html";
+    };
+  }
 };

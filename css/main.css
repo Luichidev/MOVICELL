@@ -3,6 +3,10 @@ Estilos generales de la web
 autor: @Luichidev
 revision: 27/04/2021
 */
+@import "navbar.css";
+@import "galeriaPortada.css";
+@import "footer.css";
+
 html {
   --mainColor: #fbb906;
   --secondColor: #8fc542;
@@ -25,6 +29,7 @@ header {
   width: 100%;
   background-color: var(--menuColor);
   position: fixed;
+  /* border-bottom: solid 5px var(--mainColor); */
 }
 
 img {
@@ -89,206 +94,30 @@ footer {
   text-decoration: none;
 }
 
-/* ESTILOS DEL MENU DE NAVEGACION */
+.success {
+  color: #fff;
+  background-color: var(--menuColor);
+  border-color: var(--menuColor);
+}
 
-.burger {
-  max-width: 40px;
-  min-width: 40px;
+.btn {
+  display: inline-block;
+  font-weight: 400;
   text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   cursor: pointer;
 }
 
-.burger div {
-  background-color: var(--secondColor);
-  width: 2rem;
-  height: 0.25rem;
-  margin: 8px 0;
-  transform-origin: 1px;
-  transition: all 0.3s linear;
-}
-
-.equisTop {
-  transform: rotate(50deg);
-}
-
-.equisMiddle {
-  transform: translateX(100%);
-  opacity: 0;
-}
-
-.equisBottom {
-  transform: rotate(-50deg);
-}
-
-.equisReset {
-  transform: rotate(0);
-}
-
-.equisResetMiddle {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.main-nav {
-  width: 100%;
-  position: relative;
-  padding: 10px;
-}
-
-.menu {
-  background-color: #fff;
-  position: absolute;
-  top: 80px;
-  right: 0;
-  width: 0;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  overflow: hidden;
-  transition: width 0.5s linear;
-}
-
-.menu > li > a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  color: inherit;
-  background-color: #fff;
-}
-
-.active,
-.menu li:hover {
-  border-bottom: solid 5px var(--mainColor);
-  color: var(--mainColor) !important;
-}
-
-.logo {
-  width: 40px;
-}
-
-.logo-container {
-  display: table;
-  padding: 3px;
-}
-
-.logo-container h1 {
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 1.6rem;
-}
-
-.show {
-  width: 100vw;
-}
-
-/* ESTILOS DE LA GALERIA DE LA PORTADA */
-.destacados {
-  font-weight: bold;
-  text-align: left;
-  padding: 10px 10px;
-  text-transform: uppercase;
-}
-
-article .container {
-  padding: 10px;
-}
-
-.container > figure {
-  min-width: 90%;
-  max-width: 90%;
-  min-height: 200px;
-  text-align: center;
-  border: solid 1px grey;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #fff;
-  margin: 10px auto;
-}
-
-.container > figure img {
-  width: 50px;
-  height: 114px;
-}
-
-.container > figure > figcaption {
-  font-size: 0.9rem;
-  padding: 10px;
-}
-
-.bolita {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #000;
-}
-
-.precio {
-  color: red;
-  font-weight: bold;
-  padding-top: 10px;
-}
-
-.movil-title {
-  font-weight: bold;
-}
-
-.descuento {
-  color: grey;
-  text-decoration: line-through;
-  display: inline-block;
-  padding: 0 10px;
-}
-
-.descuento + span {
-  color: red;
-  text-decoration: none;
-}
-
-/* CLASES Y ESTILOS DEL FOOTER */
-.footer-container {
-  text-align: left;
-}
-
-.footer-container div {
-  min-width: 300px;
-  color: #fff;
-  padding-top: 10px;
-}
-
-.footer-container div > p {
-  padding: 5px 10px;
-}
-
-.footer-container div > h2 {
-  padding: 10px;
-}
-
-.social a {
-  display: inline-block;
-  max-width: 50px;
-  min-width: 40px;
-  padding: 5px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.copyright {
-  color: #fff;
-  background-color: #000;
-  padding: 10px;
-  margin: 0;
-}
-
-.copyright a {
-  text-decoration: none;
-  color: inherit;
-}
-
 /* ESTILOS DE LAS MEDIA QUERYS */
-/* FORMATO MOVIL */
-
+/* FORMATO MOVIL GALERIA*/
 @media screen and (min-width: 414px) {
   .container > figure {
     min-width: 190px;
@@ -297,7 +126,6 @@ article .container {
 }
 
 /* FORMATO TABLET */
-
 @media screen and (min-width: 768px) {
   header {
     height: 90px;
@@ -357,7 +185,7 @@ article .container {
   }
 
   .menu > li {
-    padding: 20px;
+    padding: 18px;
     color: #fff;
   }
 
@@ -372,6 +200,10 @@ article .container {
     margin: 5px 0;
   }
 
+  .form-container {
+    padding-bottom: 50px;
+  }
+
   footer {
     font-size: 1rem;
   }
@@ -381,5 +213,9 @@ article .container {
 @media screen and (min-width: 1600px) {
   .container {
     width: 1400px;
+  }
+
+  .form-container {
+    padding-bottom: 80px;
   }
 }

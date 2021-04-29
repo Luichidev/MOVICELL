@@ -1,0 +1,25 @@
+input {
+  padding: 9px 0 7px 8px;
+  display: block;
+  margin: 10px;
+  width: 95%;
+}
+
+form p {
+  text-align: left;
+  color: red;
+}
+.form-container {
+  max-width: 700px;
+  min-width: 250px;
+  margin: 0 auto;
+}
+
+.form-container p {
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+.form-container h2 {
+  padding: 10px;
+}

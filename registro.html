@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/registro.css">
+  <script src="js/main.js"></script>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <title>MOVICELL</title>
+</head>
+
+<body>
+  <header>
+    <nav class="main-nav">
+      <div class="container flex-container">
+        <div class="logo-container">
+          <div class="logo">
+            <img src="image/logo.png" alt="Logo de la empresa MOVICELL">
+          </div>
+          <h1 class="main-title">MOVICELL</h1>
+        </div>
+        <ul id="menu" class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li class="active"><a href="registro.html">Registro</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div id="btnMenu" class="burger flex-1">
+          <div id="bar1"></div>
+          <div id="bar2"></div>
+          <div id="bar3"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="migas">
+      <a href="registro.html">Registro ></a>
+    </div>
+    <div class="form-container">
+      <h2>Formulario de Registro</h2>
+      <form action="#" method="post">
+        <input type="text" id="name" name="name" minlength="3" pattern="[a-zA-Z]{4,30}" autofocus placeholder="*Nombre"
+          required>
+        <input type="text" id="apellidos" name="apellidos" pattern="^[a-zA-ZñçáéíóúàèòïüÑÇÁÉÍÓÚÀÈÒÏÜ]{2,16}$"
+          title="Solo letras" placeholder="*Apellidos" required>
+        <input type="email" name="email" placeholder="*correo electrónico" required>
+        <input type="text" id="dni" name="dni" placeholder="*DNI" required>
+        <input type="text" name="domicilio" placeholder="Domiciclio">
+        <input type="text" name="user" minlength="3" maxlength="10" title="de 3 a 10 letras a-z"
+          placeholder="*Nombre usuario" required pattern="^[a-zA-Z]\w{2,9}$">
+        <input type="password" id="password" name="password" required minlength="4" maxlength="9"
+          title="de 4 a 9 caracteres" placeholder="*Contraseña">
+        <p>*Campos requeridos</p>
+        <button class="btn success">Enviar</button>
+      </form>
+      <p>Al registrarte, aceptas nuestras Condiciones. Obtén más información sobre cómo recopilamos, usamos y
+        compartimos tus datos en la Política de datos, así como el uso que hacemos de las cookies y tecnologías
+        similares en la Política
+        de cookies.</p>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container container flex-container">
+      <div class="flex-1">
+        <h2>¿Por qué visitarnos?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ullam sapiente? Cum esse repudiandae in
+          aliquam ut temporibus culpa alias!</p>
+      </div>
+      <div class="flex-1">
+        <h2>Contáctanos</h2>
+        <p>Av. 11 de septiembre 151, 08120 - Barcelona</p>
+        <p>Teléfono: +34 610 555 555</p>
+        <p>movicell@movicell.com</p>
+      </div>
+      <div class="flex-1 social">
+        <h2>Síguenos en nuestras redes</h2>
+        <a href="#"><img src="image/social/facebook.png" alt="logo facebook"></a>
+        <a href="#"><img src="image/social/twitter.png" alt="logo facebook"></a>
+        <a href="#"><img src="image/social/instagram.png" alt="logo facebook"></a>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2021 - MOVICELL | Derechos reservados | <a href="mapaWeb.html">Mapa Web</a></p>
+  </footer>
+</body>
+
+</html>

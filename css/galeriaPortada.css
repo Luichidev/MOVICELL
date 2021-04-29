@@ -1,0 +1,63 @@
+/* ESTILOS DE LA GALERIA DE LA PORTADA */
+.destacados {
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 10px;
+  text-transform: uppercase;
+}
+
+article .container {
+  padding: 10px;
+}
+
+.container > figure {
+  min-width: 90%;
+  max-width: 90%;
+  min-height: 200px;
+  text-align: center;
+  border: solid 1px grey;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 10px auto;
+}
+
+.container > figure img {
+  width: 50px;
+  height: 114px;
+}
+
+.container > figure > figcaption {
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.bolita {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.precio {
+  color: red;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.movil-title {
+  font-weight: bold;
+}
+
+.descuento {
+  color: grey;
+  text-decoration: line-through;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.descuento + span {
+  color: red;
+  text-decoration: none;
+}

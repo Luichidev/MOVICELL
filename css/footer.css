@@ -1,0 +1,39 @@
+/* CLASES Y ESTILOS DEL FOOTER */
+.footer-container {
+  text-align: left;
+}
+
+.footer-container div {
+  min-width: 300px;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.footer-container div > p {
+  padding: 5px 10px;
+}
+
+.footer-container div > h2 {
+  padding: 10px;
+}
+
+.social a {
+  display: inline-block;
+  max-width: 50px;
+  min-width: 40px;
+  padding: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.copyright {
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  margin: 0;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: inherit;
+}

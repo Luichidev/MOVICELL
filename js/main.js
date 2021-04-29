@@ -29,7 +29,37 @@ window.onload = function () {
 
   for (const card of cards) {
     card.onclick = function () {
-      location.href = "registro.html";
+      list.innerHTML = "";
+      details.style.display = "block";
+      cardImg.src = this.children[0].src;
+      cardImg.alt = this.children[0].alt;
+      cardTitle.innerHTML = this.dataset.nombre;
+      let listItem = "";
+      this.dataset.color
+        ? (listItem += `<li class="list-item">Color: ${this.dataset.color}</li>`)
+        : "";
+      this.dataset.precio
+        ? (listItem += `<li class="list-item">Precio: ${this.dataset.precio}</li>`)
+        : "";
+      this.dataset.pantalla
+        ? (listItem += `<li class="list-item">Pantalla: ${this.dataset.pantalla}</li>`)
+        : "";
+      this.dataset.so
+        ? (listItem += `<li class="list-item">S.O.: ${this.dataset.so}</li>`)
+        : "";
+      this.dataset.ram
+        ? (listItem += `<li class="list-item">RAM: ${this.dataset.ram}</li>`)
+        : "";
+      this.dataset.hd
+        ? (listItem += `<li class="list-item">Memoria Interna: ${this.dataset.hd}</li>`)
+        : "";
+
+      list.innerHTML = listItem;
     };
   }
+
+  //cerrar la ventana descripcion
+  cerrar.onclick = function () {
+    details.style.display = "none";
+  };
 };

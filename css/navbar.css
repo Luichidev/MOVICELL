@@ -76,9 +76,10 @@
   width: 40px;
 }
 
-.logo-container {
+.logo-container a {
   display: table;
   padding: 3px;
+  text-decoration: none;
 }
 
 .logo-container h1 {

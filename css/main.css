@@ -29,6 +29,12 @@ img {
   width: 100%;
 }
 
+footer {
+  background-color: var(--menuColor);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
 /* CLASES GENERALES DE LOS ELEMENTOS */
 .container {
   width: 100%;
@@ -111,7 +117,7 @@ img {
   position: absolute;
   top: 80px;
   right: -100%;
-  width: 95%;
+  width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
@@ -153,6 +159,46 @@ img {
   right: 0;
 }
 
+/* CLASES Y ESTILOS DEL FOOTER */
+.footer-container {
+  text-align: left;
+}
+
+.footer-container div {
+  min-width: 300px;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.footer-container div > p {
+  padding: 5px 10px;
+}
+
+.footer-container div > h2 {
+  padding: 10px;
+}
+
+.social a {
+  display: inline-block;
+  max-width: 50px;
+  min-width: 40px;
+  padding: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.copyright {
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  margin: 0;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* ESTILOS DE LAS MEDIA QUERYS */
 /* FORMATO TABLET */
 
@@ -171,6 +217,14 @@ img {
 
   .menu {
     top: 90px;
+  }
+
+  .footer-container div {
+    min-width: 200px;
+  }
+
+  .footer-container div > p {
+    padding: 5px 0;
   }
 }
 
@@ -203,6 +257,10 @@ img {
   .menu > li > a {
     background-color: var(--menuColor);
     font-weight: bold;
+  }
+
+  footer {
+    font-size: 1rem;
   }
 }
 

@@ -1,4 +1,4 @@
-/* ESTILOS DE LA GALERIA DE LA PORTADA */
+/* ESTILOS DE LAS GALERIAS*/
 .destacados {
   font-weight: bold;
   text-align: left;
@@ -14,12 +14,14 @@ article .container {
   min-width: 90%;
   max-width: 90%;
   min-height: 200px;
+  height: 270px;
   text-align: center;
   border: solid 1px grey;
   padding: 10px;
   border-radius: 5px;
   background-color: #fff;
   margin: 10px auto;
+  cursor: pointer;
 }
 
 .container > figure img {
@@ -59,5 +61,39 @@ article .container {
 
 .descuento + span {
   color: red;
+  text-decoration: none;
+}
+
+/* ESTILOS DE LOS FILTROS */
+.filtros {
+  height: 100%;
+  text-align: left;
+  margin: 5px;
+}
+
+.filtros li {
+  list-style: none;
+  padding: 10px;
+  text-transform: uppercase;
+  border-bottom: solid 1px grey;
+}
+
+.enlace-mas {
+  border-bottom: solid 2px var(--menuColor);
+  text-align: center;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.enlace-mas .espacio {
+  position: relative;
+  top: 17px;
+  display: inline-block;
+  padding: 0 10px;
+  background-color: #d8cdcd;
+}
+
+.espacio a {
+  padding: 8px;
   text-decoration: none;
 }

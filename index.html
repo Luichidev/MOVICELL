@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="js/main.js"></script>
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-  <title>MOVICELL</title>
+  <title>MOVICELL | Inicio</title>
 </head>
 
 <body>
@@ -16,10 +16,12 @@
     <nav class="main-nav">
       <div class="container flex-container">
         <div class="logo-container">
-          <div class="logo">
-            <img src="image/logo.png" alt="Logo de la empresa MOVICELL">
-          </div>
-          <h1 class="main-title">MOVICELL</h1>
+          <a href="index.html">
+            <div class="logo">
+              <img src="image/logo.png" alt="Logo de la empresa MOVICELL">
+            </div>
+            <h1 class="main-title">MOVICELL</h1>
+          </a>
         </div>
         <ul id="menu" class="menu">
           <li class="active"><a href="index.html">Inicio</a></li>
@@ -35,6 +37,27 @@
       </div>
     </nav>
   </header>
+  <div id="details" class="details">
+    <div class="details-container">
+      <div class="card" id="card">
+        <div class="card-head flex-container">
+          <h2 id="cardTitle">sansung</h2>
+          <span id="cerrar" class="flex-1">X</span>
+        </div>
+        <div class="card-body flex-container">
+          <div class="card-img flex-1">
+            <img src="/image/moviles/samsungA12.png" alt="" id="cardImg">
+          </div>
+          <div class="card-description flex-1" id="cardDescription">
+            <p class="destacados">Caracteristicas</p>
+            <ul id="list">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <main class="container">
     <div class="migas">
       <a href="index.html">Inicio</a>
@@ -52,70 +75,80 @@
     <article>
       <p class="destacados">Ofertas destacadas en Móviles</p>
       <div class="container flex-container">
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="SAMSUNG Galaxy A12" data-color="Negro" data-precio="125€"
+          data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
           <img src="image/moviles/samsungA12.png" alt="movil samsung">
           <figcaption><span class="movil-title">SAMSUNG</span> Galaxy A12</figcaption>
           <p class="color"><span class="bolita"></span> Negro</p>
           <p class="precio">125 €</p>
           <p class="descuento">190</p><span>-65%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="OPPO A73 5G" data-color="Negro" data-precio="125€"
+          data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
           <img src="image/moviles/oppoA73.png" alt="movil Oppo">
           <figcaption><span class="movil-title">Oppo</span> A73 5G</figcaption>
           <p class="color"><span class="bolita"></span> Negro</p>
           <p class="precio">125 €</p>
           <p class="descuento">190</p><span>-65%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="SAMSUNG Galaxy A32" data-color="Negro" data-precio="125€"
+          data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
           <img src="image/moviles/samsungA32.png" alt="movil samsung">
           <figcaption><span class="movil-title">SAMSUNG</span> Galaxy A32</figcaption>
           <p class="color"><span class="bolita"></span> Negro</p>
           <p class="precio">125 €</p>
           <p class="descuento">190</p><span>-65%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="XIAOMI Mi Note" data-color="Negro" data-precio="125€"
+          data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
           <img src="image/moviles/xiaomiNote10Lite.png" alt="movil xiaomi">
           <figcaption><span class="movil-title">Xiaomi</span> Mi Note 10 Lite</figcaption>
           <p class="color"><span class="bolita"></span> Negro</p>
           <p class="precio">125 €</p>
           <p class="descuento">190</p><span>-65%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="ZTE Blade" data-color="Negro" data-precio="125€"
+          data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
           <img src="image/moviles/ztebladeA7.png" alt="movil ZTE Blade">
           <figcaption><span class="movil-title">ZTE</span> Blade A7 2020</figcaption>
           <p class="color"><span class="bolita"></span> Negro</p>
           <p class="precio">125 €</p>
           <p class="descuento">190</p><span>-65%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="OPPO A15" data-color="Negro" data-precio="125€" data-pantalla="6.5' / 16,51"
+          data-so="Android" data-ram="4GB" data-hd="128GB">
           <img src="image/moviles/oppoA15.png" alt="movil Oppo">
           <figcaption><span class="movil-title">Oppo</span> A15 32GB+3GB RAM</figcaption>
           <p class="color"><span class="bolita"></span> Negro</p>
           <p class="precio">125 €</p>
           <p class="descuento">190</p><span>-65%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="SAMSUNG Galaxy A32" data-color="Negro" data-precio="125€"
+          data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
           <img src="image/moviles/samsungA32.png" alt="movil samsung">
           <figcaption><span class="movil-title">SAMSUNG</span> Galaxy A32</figcaption>
           <p class="color"><span class="bolita"></span> Negro</p>
           <p class="precio">125 €</p>
           <p class="descuento">190</p><span>-65%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="XIAOMI Mi Note" data-color="Negro" data-precio="125€"
+          data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
           <img src="image/moviles/xiaomiNote10Lite.png" alt="movil xiaomi">
           <figcaption><span class="movil-title">Xiaomi</span> Mi Note 10 Lite</figcaption>
           <p class="color"><span class="bolita"></span> Negro</p>
           <p class="precio">125 €</p>
           <p class="descuento">190</p><span>-65%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="ZTE Blade" data-color="Negro" data-precio="125€"
+          data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
           <img src="image/moviles/ztebladeA7.png" alt="movil ZTE Blade">
           <figcaption><span class="movil-title">ZTE</span> Blade A7 2020</figcaption>
           <p class="color"><span class="bolita"></span> Negro</p>
           <p class="precio">125 €</p>
           <p class="descuento">190</p><span>-65%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="OPPO A15" data-color="Negro" data-precio="125€" data-pantalla="6.5' / 16,51"
+          data-so="Android" data-ram="4GB" data-hd="128GB">
           <img src="image/moviles/oppoA15.png" alt="movil Oppo">
           <figcaption><span class="movil-title">Oppo</span> A15 32GB+3GB RAM</figcaption>
           <p class="color"><span class="bolita"></span> Negro</p>
@@ -127,66 +160,69 @@
     <article>
       <p class="destacados">Nuestras ofertas en Accesorios</p>
       <div class="container flex-container">
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="APPLE Airpods" data-color="Blanco" data-precio="95 €">
           <img src="image/accesorios/airpods.jpg" alt="accesorio Airpods">
           <figcaption><span class="movil-title">APPLE</span> AirPods con estuche</figcaption>
           <p class="precio">95 €</p>
           <p class="descuento">156</p><span>-60%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="SBS Jaz" data-color="Rosa" data-precio="95 €">
           <img src="image/accesorios/sbsJaz.png" alt="accesorio SBS Jaz">
           <figcaption><span class="movil-title">SBS</span> Jaz Sweet</figcaption>
           <p class="precio">95 €</p>
           <p class="descuento">190</p><span>-60%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="HUAWEI Fit Active" data-color="Rosa" data-precio="95 €">
           <img src="image/accesorios/HuaweiFit.png" alt="accesorio Huawei Fit">
           <figcaption><span class="movil-title">Huawei</span> Fit Active</figcaption>
           <p class="precio">95 €</p>
           <p class="descuento">190</p><span>-60%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="HUAWEI Free Buds" data-color="Blanco" data-precio="95 €">
           <img src="image/accesorios/HuaweiFreeBuds.png" alt="accesorio Huawei Free Buds">
           <figcaption><span class="movil-title">Huawei</span> Free Buds</figcaption>
           <p class="precio">95 €</p>
           <p class="descuento">190</p><span>-60%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="HUEAWEI GT 2e" data-color="Silver" data-precio="95 €" data-pantalla="AMOLED"
+          data-hd="4 GB">
           <img src="image/accesorios/HuaweiWatch.png" alt="accesorio Huawei Watch">
           <figcaption><span class="movil-title">Huawei</span> Watch GT 2e</figcaption>
           <p class="precio">95 €</p>
           <p class="descuento">190</p><span>-60%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="APPLE Airpods" data-color="Blanco" data-precio="95 €">
+          <img src="image/accesorios/airpods.jpg" alt="accesorio Airpods">
+          <figcaption><span class="movil-title">APPLE</span> AirPods con estuche</figcaption>
+          <p class="precio">95 €</p>
+          <p class="descuento">156</p><span>-60%</span>
+        </figure>
+        <figure class="flex-1" data-nombre="SBS Jaz" data-color="Rosa" data-precio="95 €">
           <img src="image/accesorios/sbsJaz.png" alt="accesorio SBS Jaz">
           <figcaption><span class="movil-title">SBS</span> Jaz Sweet</figcaption>
           <p class="precio">95 €</p>
           <p class="descuento">190</p><span>-60%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="HUAWEI Fit Active" data-color="Rosa" data-precio="95 €">
           <img src="image/accesorios/HuaweiFit.png" alt="accesorio Huawei Fit">
           <figcaption><span class="movil-title">Huawei</span> Fit Active</figcaption>
           <p class="precio">95 €</p>
           <p class="descuento">190</p><span>-60%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="HUAWEI Free Buds" data-color="Blanco" data-precio="95 €">
           <img src="image/accesorios/HuaweiFreeBuds.png" alt="accesorio Huawei Free Buds">
           <figcaption><span class="movil-title">Huawei</span> Free Buds</figcaption>
           <p class="precio">95 €</p>
           <p class="descuento">190</p><span>-60%</span>
         </figure>
-        <figure class="flex-1">
+        <figure class="flex-1" data-nombre="HUEAWEI GT 2e" data-color="Silver" data-precio="95 €" data-pantalla="AMOLED"
+          data-hd="4 GB">
           <img src="image/accesorios/HuaweiWatch.png" alt="accesorio Huawei Watch">
           <figcaption><span class="movil-title">Huawei</span> Watch GT 2e</figcaption>
           <p class="precio">95 €</p>
           <p class="descuento">190</p><span>-60%</span>
         </figure>
-        <figure class="flex-1">
-          <img src="image/accesorios/meCarcasa.png" alt="accesorio carcasa Me!">
-          <figcaption><span class="movil-title">ME!</span> Carcasa Galaxy A41</figcaption>
-          <p class="precio">95 €</p>
-          <p class="descuento">190</p><span>-60%</span>
-        </figure>
+
       </div>
     </article>
   </main>

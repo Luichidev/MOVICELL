@@ -44,6 +44,12 @@
   padding: 10px;
 }
 
+.main-nav .container {
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 0;
+}
+
 .menu {
   background-color: #fff;
   position: absolute;

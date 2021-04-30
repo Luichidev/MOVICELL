@@ -26,40 +26,61 @@ window.onload = function () {
 
   //click en cualquier elemento de la galeria y nos lleva a su descripcion
   var cards = document.querySelectorAll(".container > figure");
+  if (cards)
+    for (const card of cards) {
+      card.onclick = function () {
+        list.innerHTML = "";
+        details.style.display = "block";
+        cardImg.src = this.children[0].src;
+        cardImg.alt = this.children[0].alt;
+        cardTitle.innerHTML = this.dataset.nombre;
+        let listItem = "";
+        this.dataset.color
+          ? (listItem += `<li class="list-item">Color: ${this.dataset.color}</li>`)
+          : "";
+        this.dataset.precio
+          ? (listItem += `<li class="list-item">Precio: ${this.dataset.precio}</li>`)
+          : "";
+        this.dataset.pantalla
+          ? (listItem += `<li class="list-item">Pantalla: ${this.dataset.pantalla}</li>`)
+          : "";
+        this.dataset.so
+          ? (listItem += `<li class="list-item">S.O.: ${this.dataset.so}</li>`)
+          : "";
+        this.dataset.ram
+          ? (listItem += `<li class="list-item">RAM: ${this.dataset.ram}</li>`)
+          : "";
+        this.dataset.hd
+          ? (listItem += `<li class="list-item">Memoria Interna: ${this.dataset.hd}</li>`)
+          : "";
 
-  for (const card of cards) {
-    card.onclick = function () {
-      list.innerHTML = "";
-      details.style.display = "block";
-      cardImg.src = this.children[0].src;
-      cardImg.alt = this.children[0].alt;
-      cardTitle.innerHTML = this.dataset.nombre;
-      let listItem = "";
-      this.dataset.color
-        ? (listItem += `<li class="list-item">Color: ${this.dataset.color}</li>`)
-        : "";
-      this.dataset.precio
-        ? (listItem += `<li class="list-item">Precio: ${this.dataset.precio}</li>`)
-        : "";
-      this.dataset.pantalla
-        ? (listItem += `<li class="list-item">Pantalla: ${this.dataset.pantalla}</li>`)
-        : "";
-      this.dataset.so
-        ? (listItem += `<li class="list-item">S.O.: ${this.dataset.so}</li>`)
-        : "";
-      this.dataset.ram
-        ? (listItem += `<li class="list-item">RAM: ${this.dataset.ram}</li>`)
-        : "";
-      this.dataset.hd
-        ? (listItem += `<li class="list-item">Memoria Interna: ${this.dataset.hd}</li>`)
-        : "";
-
-      list.innerHTML = listItem;
-    };
-  }
+        list.innerHTML = listItem;
+      };
+    }
 
   //cerrar la ventana descripcion
-  cerrar.onclick = function () {
-    details.style.display = "none";
-  };
+  let cerrar = document.querySelector("span.cerrar");
+  if (cerrar)
+    cerrar.onclick = function () {
+      details.style.display = "none";
+    };
+
+  var inputs = document.getElementsByClassName("mayusc");
+
+  if (inputs)
+    for (const inp of inputs) {
+      inp.onkeyup = function () {
+        this.value = this.value.toUpperCase();
+      };
+    }
+
+  //obtengo la url donde estoy, lo tranformo a objeto URL para coger su pathmane
+  let url = new URL(window.location.href);
+  //Si estoy en portada aplico regla shift+q
+  if (url.pathname === "/index.html") {
+    document.onkeyup = function (evento) {
+      if (evento.crtlKey && evento.key.toUpperCase() === "Q")
+        window.location.href = "contacto.html";
+    };
+  }
 };

@@ -1,0 +1,64 @@
+.info {
+  padding: 5px;
+}
+
+.info p {
+  text-align: left;
+  padding: 10px;
+}
+
+#contacto {
+  min-width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: left;
+}
+
+#contacto .labels {
+  display: inline-block;
+  min-width: 70px;
+}
+
+#contacto .labels,
+#contacto input {
+  margin-top: 15px;
+}
+
+#contacto input {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#contacto select,
+#contacto input {
+  width: 70%;
+}
+
+#contacto select {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#contacto textarea {
+  vertical-align: top;
+  width: 70%;
+  min-height: 200px;
+  resize: none;
+  border-radius: 5px;
+}
+
+.controls {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-contact {
+  height: 100%;
+}
+
+.form-contact p {
+  text-align: center;
+}

@@ -160,3 +160,9 @@ article .container {
 .list-item:nth-of-type(odd) {
   background-color: var(--fondo);
 }
+
+.video-container {
+  min-width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+}

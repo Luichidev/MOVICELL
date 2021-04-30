@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/registro.css">
+  <link rel="stylesheet" href="css/contacto.css">
   <script src="js/main.js"></script>
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <title>MOVICELL | Registro</title>
@@ -27,8 +27,8 @@
         <ul id="menu" class="menu">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="galeria.html">Galeria</a></li>
-          <li class="active"><a href="registro.html">Registro</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li class="active"><a href="contacto.html">Contacto</a></li>
         </ul>
         <div id="btnMenu" class="burger flex-1">
           <div id="bar1"></div>
@@ -37,13 +37,56 @@
         </div>
       </div>
     </nav>
+    <div class="login">
+      <form id="login" method="post" autocomplete="off">
+        <input type="text" name="user" placeholder="Usuario">
+        <input type="password" name="password" placeholder="Contraseña">
+        <button class="btn">Enviar</button>
+      </form>
+    </div>
   </header>
   <main class="container">
     <div class="migas">
-      <a href="registro.html">Registro</a>
+      <a href="contacto.html">Contacto</a>
     </div>
-    <article>
-
+    <h2>Contáctenos</h2>
+    <article class="contact-container flex-container">
+      <div class="info flex-1">
+        <p class="destacados">Información de contacto</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi adipisci magni natus autem a molestias,
+          sapiente, itaque debitis, dolore asperiores laborum recusandae. Magnam officia molestias atque illo, vel
+          tenetur delectus.</p>
+        <p>Teléfono: +34 610 555 555</p>
+        <p>movicell@movicell.com</p>
+        <p>Av. 11 de septiembre 151, 08120 - Barcelona</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2987.454365045768!2d2.1924501156734753!3d41.516097595968496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4be9206d8aee1%3A0x13ce0fb80ef0395f!2sAvinguda%2011%20de%20Setembre%2C%20151%2C%2008120%20La%20Llagosta%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1619713767168!5m2!1ses!2ses"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="form-contact flex-1">
+        <p class="destacados">Formulario de contacto</p>
+        <form method="post" autocomplete="off" id="contacto">
+          <label class="labels" for="autor">Autor</label>
+          <input type="text" id="autor" name="autor" required pattern="^[a-zA-ZñçáéíóúàèòïüÑÇÁÉÍÓÚÀÈÒÏÜ]{2,16}$"
+            title="solamente letras de 6 a 16 caracteres">
+          <br>
+          <label class="labels" for="asunto">Asunto</label>
+          <select name="asunto" id="asunto">
+            <option value="1">Informacíon general</option>
+            <option value="2">Informacíon sobre la web</option>
+            <option value="3">Informacíon sobre los derechos de autor</option>
+            <option value="4">Informacíon sobre el autor de la web</option>
+            <option value="5">Otros</option>
+          </select>
+          <br>
+          <label class="labels" for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje"></textarea>
+          <br>
+          <div class="controls">
+            <button class="btn success">Enviar</button>
+          </div>
+        </form>
+      </div>
     </article>
   </main>
   <footer>

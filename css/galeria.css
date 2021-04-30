@@ -10,7 +10,7 @@ article .container {
   padding: 10px;
 }
 
-.container > figure {
+.figure {
   min-width: 90%;
   max-width: 90%;
   min-height: 200px;
@@ -24,12 +24,12 @@ article .container {
   cursor: pointer;
 }
 
-.container > figure img {
+.figure img {
   width: 50px;
   height: 114px;
 }
 
-.container > figure > figcaption {
+.figure .figcaption {
   font-size: 0.9rem;
   padding: 10px;
 }

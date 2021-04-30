@@ -5,6 +5,7 @@ revision: 27/04/2021
 */
 @import "navbar.css";
 @import "login.css";
+@import "search.css";
 @import "galeria.css";
 @import "footer.css";
 
@@ -127,10 +128,22 @@ footer {
   cursor: pointer;
 }
 
+.toUp {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 15;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 50px;
+  display: none;
+}
+
 /* ESTILOS DE LAS MEDIA QUERYS */
 /* FORMATO MOVIL GALERIA*/
 @media screen and (min-width: 414px) {
-  .container > figure {
+  .figure {
     min-width: 45%;
     max-width: 45%;
   }
@@ -167,7 +180,7 @@ footer {
     max-width: 80%;
   }
 
-  .container > figure {
+  .figure {
     min-width: 30%;
     max-width: 30%;
   }
@@ -235,7 +248,7 @@ footer {
     max-width: 60%;
   }
 
-  .container > figure {
+  .figure {
     min-width: 22%;
     max-width: 22%;
   }

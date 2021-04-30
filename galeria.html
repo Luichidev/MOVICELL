@@ -49,7 +49,7 @@
       <div class="card" id="card">
         <div class="card-head flex-container">
           <h2 id="cardTitle">sansung</h2>
-          <span id="cerrar" class="flex-1">X</span>
+          <span class="flex-1 cerrar">X</span>
         </div>
         <div class="card-body flex-container">
           <div class="card-img flex-1">
@@ -69,113 +69,135 @@
     <div class="migas">
       <a href="galeria.html">Productos > Móviles y Smartphones</a>
     </div>
+    <div class="search">
+      <div class="search-container">
+        <form action="post" id="search">
+          <datalist id="peliculas">
+            <option value="iphone X 64GB">
+            <option value="iphone 12 PRO">
+            <option value="ipad Air Pro">
+            <option value="Oppo A73 5G">
+            <option value="Oppo A15 32GB">
+            <option value="Oppo Rino 64GB">
+            <option value="Samsung Galaxy A12">
+            <option value="Samsung Galaxy A32">
+            <option value="Samsung Galaxy S20">
+            <option value="Xiaomi Mi Note 10">
+            <option value="Xiaomi Red Mi Note 12">
+            <option value="ZTE Blade A7">
+          </datalist>
+          <input type="search" name="buscar" list="peliculas" placeholder="Buscar...">
+          <input type="image" src="image/lupa.png" alt="buscar">
+        </form>
+      </div>
+    </div>
     <div class="video-container">
       <video src="videos/smartphone.mp4" controls autoplay muted></video>
     </div>
-
     <p class="destacados">Móviles y smartphones</p>
     <div class="galery-container container flex-container">
-      <figure class="flex-1" data-nombre="SAMSUNG Galaxy A12" data-color="Negro" data-precio="125€"
+      <div class="flex-1 figure" data-nombre="SAMSUNG Galaxy A12" data-color="Negro" data-precio="125€"
         data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
         <img src="image/moviles/samsungA12.png" alt="movil samsung">
-        <figcaption><span class="movil-title">SAMSUNG</span> Galaxy A12</figcaption>
+        <p class="figcaption"><span class="movil-title">SAMSUNG</span> Galaxy A12</p>
         <p class="color"><span class="bolita"></span> Negro</p>
         <p class="precio">125 €</p>
         <p class="descuento">190</p><span>-65%</span>
-      </figure>
-      <figure class="flex-1" data-nombre="OPPO A73 5G" data-color="Negro" data-precio="125€"
+      </div>
+      <div class="flex-1 figure" data-nombre="OPPO A73 5G" data-color="Negro" data-precio="125€"
         data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
         <img src="image/moviles/oppoA73.png" alt="movil Oppo">
-        <figcaption><span class="movil-title">Oppo</span> A73 5G</figcaption>
+        <p class="figcaption"><span class="movil-title">Oppo</span> A73 5G</p>
         <p class="color"><span class="bolita"></span> Negro</p>
         <p class="precio">125 €</p>
         <p class="descuento">190</p><span>-65%</span>
-      </figure>
-      <figure class="flex-1" data-nombre="SAMSUNG Galaxy A32" data-color="Negro" data-precio="125€"
+      </div>
+      <div class="flex-1 figure" data-nombre="SAMSUNG Galaxy A32" data-color="Negro" data-precio="125€"
         data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
         <img src="image/moviles/samsungA32.png" alt="movil samsung">
-        <figcaption><span class="movil-title">SAMSUNG</span> Galaxy A32</figcaption>
+        <p class="figcaption"><span class="movil-title">SAMSUNG</span> Galaxy A32</p>
         <p class="color"><span class="bolita"></span> Negro</p>
         <p class="precio">125 €</p>
         <p class="descuento">190</p><span>-65%</span>
-      </figure>
-      <figure class="flex-1" data-nombre="XIAOMI Mi Note" data-color="Negro" data-precio="125€"
+      </div>
+      <div class="flex-1 figure" data-nombre="XIAOMI Mi Note" data-color="Negro" data-precio="125€"
         data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
         <img src="image/moviles/xiaomiNote10Lite.png" alt="movil xiaomi">
-        <figcaption><span class="movil-title">Xiaomi</span> Mi Note 10 Lite</figcaption>
+        <p class="figcaption"><span class="movil-title">Xiaomi</span> Mi Note 10 Lite</p>
         <p class="color"><span class="bolita"></span> Negro</p>
         <p class="precio">125 €</p>
         <p class="descuento">190</p><span>-65%</span>
-      </figure>
-      <figure class="flex-1" data-nombre="ZTE Blade" data-color="Negro" data-precio="125€" data-pantalla="6.5' / 16,51"
-        data-so="Android" data-ram="4GB" data-hd="128GB">
+      </div>
+      <div class="flex-1 figure" data-nombre="ZTE Blade" data-color="Negro" data-precio="125€"
+        data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
         <img src="image/moviles/ztebladeA7.png" alt="movil ZTE Blade">
-        <figcaption><span class="movil-title">ZTE</span> Blade A7 2020</figcaption>
+        <p class="figcaption"><span class="movil-title">ZTE</span> Blade A7 2020</p>
         <p class="color"><span class="bolita"></span> Negro</p>
         <p class="precio">125 €</p>
         <p class="descuento">190</p><span>-65%</span>
-      </figure>
-      <figure class="flex-1" data-nombre="OPPO A15" data-color="Negro" data-precio="125€" data-pantalla="6.5' / 16,51"
-        data-so="Android" data-ram="4GB" data-hd="128GB">
+      </div>
+      <div class="flex-1 figure" data-nombre="OPPO A15" data-color="Negro" data-precio="125€"
+        data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
         <img src="image/moviles/oppoA15.png" alt="movil Oppo">
-        <figcaption><span class="movil-title">Oppo</span> A15 32GB+3GB RAM</figcaption>
+        <p class="figcaption"><span class="movil-title">Oppo</span> A15 32GB+3GB RAM</p>
         <p class="color"><span class="bolita"></span> Negro</p>
         <p class="precio">125 €</p>
         <p class="descuento">190</p><span>-65%</span>
-      </figure>
-      <figure class="flex-1" data-nombre="SAMSUNG Galaxy A32" data-color="Negro" data-precio="125€"
+      </div>
+      <div class="flex-1 figure" data-nombre="SAMSUNG Galaxy A32" data-color="Negro" data-precio="125€"
         data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
         <img src="image/moviles/samsungA32.png" alt="movil samsung">
-        <figcaption><span class="movil-title">SAMSUNG</span> Galaxy A32</figcaption>
+        <p class="figcaption"><span class="movil-title">SAMSUNG</span> Galaxy A32</p>
         <p class="color"><span class="bolita"></span> Negro</p>
         <p class="precio">125 €</p>
         <p class="descuento">190</p><span>-65%</span>
-      </figure>
-      <figure class="flex-1" data-nombre="XIAOMI Mi Note" data-color="Negro" data-precio="125€"
+      </div>
+      <div class="flex-1 figure" data-nombre="XIAOMI Mi Note" data-color="Negro" data-precio="125€"
         data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
         <img src="image/moviles/xiaomiNote10Lite.png" alt="movil xiaomi">
-        <figcaption><span class="movil-title">Xiaomi</span> Mi Note 10 Lite</figcaption>
+        <p class="figcaption"><span class="movil-title">Xiaomi</span> Mi Note 10 Lite</p>
         <p class="color"><span class="bolita"></span> Negro</p>
         <p class="precio">125 €</p>
         <p class="descuento">190</p><span>-65%</span>
-      </figure>
-      <figure class="flex-1" data-nombre="ZTE Blade" data-color="Negro" data-precio="125€" data-pantalla="6.5' / 16,51"
-        data-so="Android" data-ram="4GB" data-hd="128GB">
+      </div>
+      <div class="flex-1 figure" data-nombre="ZTE Blade" data-color="Negro" data-precio="125€"
+        data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
         <img src="image/moviles/ztebladeA7.png" alt="movil ZTE Blade">
-        <figcaption><span class="movil-title">ZTE</span> Blade A7 2020</figcaption>
+        <p class="figcaption"><span class="movil-title">ZTE</span> Blade A7 2020</p>
         <p class="color"><span class="bolita"></span> Negro</p>
         <p class="precio">125 €</p>
         <p class="descuento">190</p><span>-65%</span>
-      </figure>
-      <figure class="flex-1" data-nombre="OPPO A15" data-color="Negro" data-precio="125€" data-pantalla="6.5' / 16,51"
-        data-so="Android" data-ram="4GB" data-hd="128GB">
+      </div>
+      <div class="flex-1 figure" data-nombre="OPPO A15" data-color="Negro" data-precio="125€"
+        data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
         <img src="image/moviles/oppoA15.png" alt="movil Oppo">
-        <figcaption><span class="movil-title">Oppo</span> A15 32GB+3GB RAM</figcaption>
+        <p class="figcaption"><span class="movil-title">Oppo</span> A15 32GB+3GB RAM</p>
         <p class="color"><span class="bolita"></span> Negro</p>
         <p class="precio">125 €</p>
         <p class="descuento">190</p><span>-65%</span>
-      </figure>
-      <figure class="flex-1" data-nombre="SAMSUNG Galaxy A32" data-color="Negro" data-precio="125€"
+      </div>
+      <div class="flex-1 figure" data-nombre="SAMSUNG Galaxy A32" data-color="Negro" data-precio="125€"
         data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
         <img src="image/moviles/samsungA32.png" alt="movil samsung">
-        <figcaption><span class="movil-title">SAMSUNG</span> Galaxy A32</figcaption>
+        <p class="figcaption"><span class="movil-title">SAMSUNG</span> Galaxy A32</p>
         <p class="color"><span class="bolita"></span> Negro</p>
         <p class="precio">125 €</p>
         <p class="descuento">190</p><span>-65%</span>
-      </figure>
-      <figure class="flex-1" data-nombre="XIAOMI Mi Note" data-color="Negro" data-precio="125€"
+      </div>
+      <div class="flex-1 figure" data-nombre="XIAOMI Mi Note" data-color="Negro" data-precio="125€"
         data-pantalla="6.5' / 16,51" data-so="Android" data-ram="4GB" data-hd="128GB">
         <img src="image/moviles/xiaomiNote10Lite.png" alt="movil xiaomi">
-        <figcaption><span class="movil-title">Xiaomi</span> Mi Note 10 Lite</figcaption>
+        <p class="figcaption"><span class="movil-title">Xiaomi</span> Mi Note 10 Lite</p>
         <p class="color"><span class="bolita"></span> Negro</p>
         <p class="precio">125 €</p>
         <p class="descuento">190</p><span>-65%</span>
-      </figure>
+      </div>
       <div class="enlace-mas">
         <div class="espacio"><a class="btn success" href="#">+ Mostrar más</a></div>
       </div>
     </div>
   </main>
+  <div id="rocket" class="toUp"><img id="rocketImg" src="image/rocket.png" alt="imagen de un cochete"></div>
   <footer>
     <div class="footer-container container flex-container">
       <div class="flex-1">

@@ -25,11 +25,12 @@ window.onload = function () {
   };
 
   //click en cualquier elemento de la galeria y nos lleva a su descripcion
-  var cards = document.querySelectorAll(".container > figure");
+  var cards = document.querySelectorAll(".figure");
   if (cards)
     for (const card of cards) {
       card.onclick = function () {
         list.innerHTML = "";
+        rocket.style.display = "none"; // borro el back to top
         details.style.display = "block";
         cardImg.src = this.children[0].src;
         cardImg.alt = this.children[0].alt;
@@ -63,6 +64,8 @@ window.onload = function () {
   if (cerrar)
     cerrar.onclick = function () {
       details.style.display = "none";
+      // pongo el back to top que quite al hacer la img grande
+      rocket.style.display = "block";
     };
 
   var inputs = document.getElementsByClassName("mayusc");
@@ -78,9 +81,34 @@ window.onload = function () {
   let url = new URL(window.location.href);
   //Si estoy en portada aplico regla shift+q
   if (url.pathname === "/index.html") {
-    document.onkeyup = function (evento) {
-      if (evento.crtlKey && evento.key.toUpperCase() === "Q")
+    document.body.onkeyup = function (evento) {
+      if (evento.shiftKey && evento.key.toUpperCase() === "Q")
         window.location.href = "contacto.html";
+    };
+
+    //La portada se recargará cada 5 minutos = 300000 milisegundos
+    setInterval(function () {
+      window.location.reload();
+    }, 300000);
+  }
+
+  var rocket = document.querySelector("#rocket");
+
+  if (rocket) {
+    window.onscroll = function () {
+      if (
+        document.body.scrollTop > 40 ||
+        document.documentElement.scrollTop > 40
+      ) {
+        rocket.style.display = "block";
+      } else {
+        rocket.style.display = "none";
+      }
+    };
+
+    rocketImg.onclick = function () {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     };
   }
 };

@@ -1,0 +1,21 @@
+/* ESTILOS DEL FORMULARIO DE BUSQUEDA */
+#search {
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+  margin-bottom: 10px;
+  background-color: var(--menuColor);
+}
+
+#search input[type="search"] {
+  border: none;
+  padding: 7px;
+}
+
+#search input[type="image"] {
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+  border: solid 2px lightgray;
+  border-radius: 5px;
+}

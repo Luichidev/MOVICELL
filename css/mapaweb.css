@@ -1,0 +1,25 @@
+.mapa-web {
+  text-align: left;
+}
+
+.list-web {
+  padding: 10px;
+}
+
+.list-web li {
+  list-style: none;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.list-web li a {
+  color: var(--menuColor);
+  display: block;
+  width: 10%;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.list-web li p {
+  text-transform: capitalize;
+}

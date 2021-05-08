@@ -14,6 +14,7 @@ html {
   --secondColor: #8fc542;
   --menuColor: #4365c4;
   --fondo: #d8cdcd;
+  scroll-behavior: smooth;
 }
 
 * {

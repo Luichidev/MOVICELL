@@ -31,6 +31,7 @@ function topUp() {
     if (marginY <= 0) clearTimeout(scroller);
 
     window.scroll(0, marginY);
+    rocket.classList.add("rocket");
   }
 }
 
@@ -127,6 +128,7 @@ window.onload = function () {
         rocket.style.display = "block";
       } else {
         rocket.style.display = "none";
+        rocket.classList.remove("rocket");
       }
 
       marginY = window.scrollY;
@@ -135,6 +137,7 @@ window.onload = function () {
     //Smooth scroll no esta soportado por todos los navegadores, si lo soporta aplico el css y si no aplico mi función toUp
     if (getComputedStyle(document.body).scrollBehavior === "smooth") {
       rocketImg.onclick = function () {
+        rocket.classList.add("rocket");
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       };

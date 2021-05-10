@@ -7,6 +7,7 @@ revision: 27/04/2021
 @import "login.css";
 @import "search.css";
 @import "galeria.css";
+@import "rocket.css";
 @import "footer.css";
 
 html {
@@ -127,56 +128,6 @@ footer {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   cursor: pointer;
-}
-
-.toUp {
-  position: fixed;
-  bottom: 40px;
-  right: 20px;
-  z-index: 15;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  width: 50px;
-  display: none;
-}
-
-.rocket {
-  animation: animate 0.2s ease infinite;
-}
-
-.rocket::before {
-  content: "";
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 30px;
-  background: linear-gradient(red, transparent);
-}
-
-.rocket.rocket::after {
-  content: "";
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 30px;
-  background: orange;
-  filter: blur(10px);
-}
-
-@keyframes animate {
-  0%,
-  100% {
-    transform: translateY(-2px);
-  }
-
-  50% {
-    transform: translateY(2px);
-  }
 }
 
 /* ESTILOS DE LAS MEDIA QUERYS */

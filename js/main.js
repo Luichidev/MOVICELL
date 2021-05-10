@@ -32,6 +32,7 @@ function topUp() {
 
     window.scroll(0, marginY);
     rocket.classList.add("rocket");
+    fire.classList.add("fire");
   }
 }
 
@@ -129,6 +130,7 @@ window.onload = function () {
       } else {
         rocket.style.display = "none";
         rocket.classList.remove("rocket");
+        fire.classList.remove("fire");
       }
 
       marginY = window.scrollY;
@@ -138,6 +140,7 @@ window.onload = function () {
     if (getComputedStyle(document.body).scrollBehavior === "smooth") {
       rocketImg.onclick = function () {
         rocket.classList.add("rocket");
+        fire.classList.add("fire");
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       };
